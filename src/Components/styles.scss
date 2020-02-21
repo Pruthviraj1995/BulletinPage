@@ -1,0 +1,151 @@
+.container{
+    // background-color: lightblue;
+    flex: 1;
+    overflow: auto;
+    // border: 1px solid;
+}
+
+.card{
+    // border: 1px solid;
+    flex: none;
+    margin-bottom: 0.85rem;
+
+    >div{
+        padding-bottom: 0.5rem;
+    }
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    &>div:first-child{
+        display: flex;
+    }
+
+    &>div{
+        align-items: center;
+    }
+}
+
+.logoIcon{
+    margin-right: 1rem;
+}
+
+.userName{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    >div{
+        padding-right: 1rem;
+    }
+
+    >span{
+        color: rgb(151, 139, 139);
+    }
+}
+
+.postDetails{
+    display: flex;
+    flex-direction: column;
+
+    >div{
+        align-self: flex-start;
+    }
+
+    .postDate{
+        color: rgb(124, 120, 120);
+        padding: 0.8rem 0rem;
+    }
+
+    .postDesc{
+        font-weight: bold;
+    }
+}
+
+.postImg{
+    // border: 1px solid;
+    height: 8rem;
+    width: 100%;
+
+    >img{
+        height: 100%;
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+}
+
+.postReactions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    >div{
+        display: flex;
+        align-items: center;
+
+        &:first-child{
+            >span{
+                color: rgb(124, 120, 120);
+            }
+        }
+
+        &:last-child{
+            >span{
+                color: grey;
+                font-weight: 600;
+            }
+
+        }
+    } 
+}
+
+.comment{
+    display: flex;
+}
+
+.prof{
+    display: flex;
+    
+    span{
+    padding-right: 1rem;
+    }
+}
+
+.icon{
+    height: 2rem;
+    width: 2rem;
+    margin: 0.5rem;
+}
+
+.iconprof{
+    border-radius: 50%;
+}
+
+.profileComp{
+    position: relative;
+}
+
+.listUserProf{
+    position: absolute;
+    right: 0;
+    background-color: white;
+}
+
+.listUser{
+    z-index: 1;
+    list-style-type: none;
+    border: 1px solid;
+    box-shadow: 5px 5px 10px rgba(99, 84, 84, 0.8);
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+li{
+
+    &:hover{
+        background-color: grey;
+    }
+}

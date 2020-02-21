@@ -1,0 +1,87 @@
+.commentPage{
+    // background-color: lightblue;
+    height: 100%;
+    overflow: auto; 
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    &>:nth-child(2){
+        flex: 1;
+        overflow-y: auto;
+    }
+}
+
+.cHeader{
+    display: flex;
+    // height: 15%;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0rem 1rem;
+
+    >:last-child{
+        font-weight: 600;
+        color: rgb(100, 99, 99);
+    }
+}
+
+.profile{
+    display: flex;
+}
+
+.backBtn{
+    padding-right: 1rem;
+}
+
+.comments{
+    display: flex;
+    margin-bottom: 0.5rem;
+    align-items: center;
+    
+    >:first-child{
+        padding: 0rem 1rem;
+    }
+
+}
+
+.cFooter{
+    display: flex;
+    height: 3rem;
+    width: 100%;
+    border-top: 1.5px solid rgb(231, 226, 226);
+    padding-top: 0.6rem;
+    position: relative;
+    justify-content: space-between;
+    align-self: flex-end;
+
+    input[type='text']{
+        outline: 0;
+        height: 100%;
+        width: 150%;
+        padding-left: 0.8rem;
+        transform: translate(-80px, 5px);
+        border: none;
+
+        &::placeholder{
+            color: rgb(196, 193, 193);
+            font-weight: 600;
+        }
+    
+    }
+
+    .postBtn{
+        transform: translateY(10px);
+        font-weight: 600;
+        color: rgb(196, 193, 193);
+
+        &:hover{
+            color: rgb(100, 99, 99);
+        }
+    }
+
+}
+
+.iconCom{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}

@@ -1,5 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.root{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
 .App {
-  text-align: center;
+  width: 30rem;
+  height: 100%;
 }
 
 .App-logo {
